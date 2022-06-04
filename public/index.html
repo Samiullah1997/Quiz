@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz app</title>
+</head>
+<body>
+<div class="parent ">
+    <div class="design"></div>
+    <div class="list animate__animated animate__zoomIn animate__delay-.3s">
+        <div class="linera"></div>
+        <h3 id="question">What is your Full Name</h3>
+        <div class="options">
+            <input id="option1"  class="opt" type="radio" name="Click" id="">
+            <span class="option" id="ans1"></span>
+        </div>
+        <div class="options">
+            <input  id="option2"  class="opt" type="radio" name="Click" id="">
+            <span class="option" id="ans2"></span>
+        </div>
+        <div class="options">
+            <input  id="option3"  class="opt" type="radio" name="Click" id="">
+            <span class="option" id="ans3"></span>
+        </div>
+        <div class="options">
+            <input id="option4"  class="opt" type="radio" name="Click" id="">
+            <span class="option" id="ans4"></span>
+        </div>
+        <div class="image">
+            <img onclick="nextone()" id="rukja"  src="/next.png" alt="">
+        </div>
+    </div>
+    <div id="div" class="animate__animated animate__zoomIn animate__delay-.3s">
+        <p class="p1">Your score is 2 into 4</p>
+        <p class="p2">Your grade is A</p>
+        <p class="p3">Your persentage is 50%</p>
+        <div class="reload">
+            <a onclick="sami()" href=""><img  src="./again.png" alt=""></a>
+        </div>
+    </div>
+</div> 
+
+
+
+<div id="tab">
+    <ul class="one" id="table">
+
+    </ul>
+    <ul class="one" id="table1">
+    
+    </ul>
+    <ul class="one" id="table2">
+    
+    </ul>
+    <ul class="one" id="table3">
+    
+    </ul>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
